@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div class="card">
+    <div class="card__img">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
+    </div>
+
+    <div class="card__info">
+      <h1 class="heading">Stay Updated!</h1>
+      <p class="body">Join 60,000+ product managers receiving monthly updates on:</p>
+    
+      <ul class="info__list-container">
+        <span><img src="assets/images/icon-list.svg" alt=""><li>Product discovery and building what matters</li></span>
+        <span><img src="assets/images/icon-list.svg" alt=""><li>Measuring to ensure updates are a success</li></span>
+        <span><img src="assets/images/icon-list.svg" alt=""><li>And much more!</li></span>
+      </ul>
+
+      <form class="email-form" novalidate>
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="email@company.com">
+        <span class="email-error">Valid email required</span>
+        <input class="btn sub-btn" type="submit" value="Subscribe to monthly newsletter">
+      </form>
+    </div>
+  </div>
+
+  <div class="confo hidden">
+    <img src="assets/images/icon-success.svg" alt="">
+    <h1 class="heading">Thanks for subscribing!</h1>
+    <p class="body">A confirmation email has been sent to <span class="bold" id="confo-email-field">michaela101704@gmail.com</span>. Please open it and click the button inside to confirm your subscription</p>
+    
+    <button class="btn dismiss-btn">Dismiss message</button>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
